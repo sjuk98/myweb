@@ -69,7 +69,14 @@ export const BLOG_POSTS: BlogPost[] = [
       "Requirement Management",
       "Project Delivery",
       "Agile Development",
-      "Change Management"
+      "Change Management",
+      "Software Development delays",
+      "Managing Scope Creep",
+      "Agile Project Management",
+      "Software Requirement Changes",
+      "Client Communication",
+      "Developer Productivity",
+      "Refactoring Code Cost"
     ]
   },
   {
@@ -134,7 +141,14 @@ export const BLOG_POSTS: BlogPost[] = [
       "SSR",
       "SSG",
       "ISR",
-      "Next.js 2026"
+      "Next.js 2026",
+      "Vercel React Framework",
+      "Server Side Rendering",
+      "Incremental Static Regeneration",
+      "Core Web Vitals SEO",
+      "Next.js App Router",
+      "Full Stack Next.js",
+      "Fast Web Development Framework"
     ]
   },
   {
@@ -188,7 +202,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Frontend Development",
       "Team Communication",
       "UX Design",
-      "Web Development"
+      "Web Development",
+      "Figma to Code Workflow",
+      "UI UX Collaboration Tools",
+      "Design to Development Handoff",
+      "Team Friction Software",
+      "Design Systems Figma"
     ]
   }
 ];

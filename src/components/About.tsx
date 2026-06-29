@@ -29,6 +29,7 @@ export default function About() {
               src="/profile.jpg" 
               alt="Shiju UK" 
               fill 
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-top brightness-75 contrast-125 grayscale-[30%] group-hover:brightness-100 group-hover:contrast-100 group-hover:grayscale-0 transition-all duration-700" 
             />
             <div className="absolute inset-0 bg-accent/20 mix-blend-multiply group-hover:bg-transparent transition-all duration-700" />

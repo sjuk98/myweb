@@ -26,6 +26,7 @@ export default function Hero() {
           src="/hero-bg.png" 
           alt="Background Moss" 
           fill 
+          sizes="100vw"
           className="object-cover opacity-30 mix-blend-overlay"
           priority
         />

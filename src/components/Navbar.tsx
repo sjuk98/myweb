@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href="/#services" className="hover:text-accent-light transition-colors">Services</Link>
           <Link href="/#works" className="hover:text-accent-light transition-colors">Works</Link>
           <Link href="/#experience" className="hover:text-accent-light transition-colors">Experience</Link>
-          <Link href="/#blog" className="hover:text-accent-light transition-colors">Blog</Link>
+          <Link href="/blog" className="hover:text-accent-light transition-colors">Blog</Link>
           <Link href="/#contact" className="hover:text-accent-light transition-colors">Contact</Link>
         </div>
         <Link href="/#contact" className="border border-accent-light/30 hover:border-accent-light hover:bg-accent-light/5 text-xs font-bold tracking-wider px-5 py-2.5 transition-all rounded-sm uppercase">

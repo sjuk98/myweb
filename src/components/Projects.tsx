@@ -96,7 +96,7 @@ export default function Projects() {
                 <ul className="list-disc pl-5 text-foreground/70 text-sm leading-relaxed font-light space-y-1">
                   <li>Completely eliminated manual CSV formatting and imports</li>
                   <li>Decreased general administrative processing times by 35%</li>
-                  <li>Established real-time role-based access for team leads</li>
+                  <li>Established real-time role-based access for department heads</li>
                 </ul>
               </div>
             </div>

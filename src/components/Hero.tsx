@@ -83,8 +83,8 @@ export default function Hero() {
             <div className="text-[10px] font-bold tracking-[0.15em] text-foreground/50 uppercase">Technologies Mastered</div>
           </div>
           <div className="flex flex-col justify-center p-4 pt-6 lg:pt-4">
-            <div className="text-3xl md:text-4xl font-serif italic text-accent-light mb-1 font-semibold">Lead</div>
-            <div className="text-[10px] font-bold tracking-[0.15em] text-foreground/50 uppercase">Team Lead Experience</div>
+            <div className="text-3xl md:text-4xl font-serif italic text-accent-light mb-1 font-semibold">Senior</div>
+            <div className="text-[10px] font-bold tracking-[0.15em] text-foreground/50 uppercase">Engineering Focus</div>
           </div>
         </motion.div>
       </motion.div>

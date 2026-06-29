@@ -402,9 +402,9 @@ export default function Home() {
 
           <div className="border border-border/30 bg-muted/20 p-8 hover:border-accent-light/30 hover:shadow-lg hover:shadow-accent-light/[0.02] transition-all duration-300 relative group rounded-sm">
             <Users className="w-6 h-6 text-accent-light mb-6" />
-            <h3 className="text-xl font-serif mb-4 text-foreground">Team Leadership</h3>
+            <h3 className="text-xl font-serif mb-4 text-foreground">Systems Consulting</h3>
             <p className="text-foreground/60 text-sm leading-relaxed font-light">
-              Supervising sprint planning, executing code reviews, mentoring junior engineers, and aligning development tasks with business goals.
+              Reviewing system architecture designs, advising on performance optimizations, and aligning software strategies with business requirements.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { BLOG_POSTS, BlogPost } from "@/lib/blog";
+import { BLOG_POSTS } from "@/lib/blog";
 import { BookOpen, Calendar, ArrowLeft, Tag } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -39,7 +39,7 @@ export default async function BlogPostPage({ params }: Props) {
   const renderContentBlock = (block: string, index: number) => {
     if (block.startsWith("## ")) {
       return (
-        <h2 key={index} className="text-3xl font-serif mt-12 mb-6 text-foreground leading-tight tracking-tight">
+        <h2 key={index} className="text-3xl md:text-[38px] font-serif font-medium text-foreground mt-20 mb-8 leading-tight tracking-tight border-l-4 border-accent-light/60 pl-6">
           {block.replace("## ", "")}
         </h2>
       );
@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
     
     if (block.startsWith("### ")) {
       return (
-        <h3 key={index} className="text-2xl font-serif mt-8 mb-4 text-foreground leading-tight tracking-tight">
+        <h3 key={index} className="text-2xl md:text-[28px] font-serif italic text-accent-light mt-12 mb-6 leading-snug tracking-tight">
           {block.replace("### ", "")}
         </h3>
       );
@@ -60,16 +60,19 @@ export default async function BlogPostPage({ params }: Props) {
         .filter(Boolean);
         
       return (
-        <ul key={index} className="list-disc pl-6 my-6 space-y-3 text-foreground/80 font-light text-base leading-relaxed">
+        <ul key={index} className="my-8 space-y-4 pl-1">
           {items.map((item, idx) => (
-            <li key={idx}>{item}</li>
+            <li key={idx} className="flex items-start gap-3.5 text-[17px] md:text-[19px] font-sans font-light leading-[1.75] text-foreground/80">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-light mt-3 flex-shrink-0" />
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
       );
     }
 
     return (
-      <p key={index} className="text-foreground/80 font-light text-base md:text-lg leading-relaxed mb-6">
+      <p key={index} className="text-[17px] md:text-[19px] font-sans font-light leading-[1.8] text-foreground/75 mb-8">
         {block}
       </p>
     );
@@ -83,7 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <Navbar />
 
-      <article className="py-40 px-6 max-w-3xl mx-auto w-full relative z-10 flex-grow">
+      <article className="py-40 px-6 max-w-4xl mx-auto w-full relative z-10 flex-grow">
         {/* Back Link */}
         <Link 
           href="/blog" 
@@ -93,37 +96,39 @@ export default async function BlogPostPage({ params }: Props) {
         </Link>
 
         {/* Post Header */}
-        <header className="mb-16 border-b border-border/20 pb-12">
-          <div className="flex flex-wrap items-center gap-4 text-[9px] font-bold tracking-widest text-accent-light uppercase mb-6">
-            <span className="flex items-center gap-1">
+        <header className="mb-20 border-b border-border/20 pb-14">
+          <div className="flex flex-wrap items-center gap-4 mb-8">
+            <span className="text-[10px] tracking-[0.25em] font-bold text-accent-light uppercase bg-accent-light/10 border border-accent-light/20 px-4 py-2 rounded-full flex items-center gap-1.5">
               <BookOpen className="w-3.5 h-3.5" />
               {post.category}
             </span>
             <span className="text-foreground/20">•</span>
-            <span className="flex items-center gap-1">
+            <span className="text-[11px] font-medium tracking-wider text-foreground/50 uppercase flex items-center gap-1.5">
               <Calendar className="w-3.5 h-3.5" />
               {post.date}
             </span>
             <span className="text-foreground/20">•</span>
-            <span>{post.readTime}</span>
+            <span className="text-[11px] font-medium tracking-wider text-foreground/50 uppercase">
+              {post.readTime}
+            </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif italic mb-8 leading-[1.15] tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-[56px] font-serif font-medium tracking-tight text-foreground leading-[1.15] mb-8">
             {post.title}
           </h1>
 
-          <div className="text-xs text-foreground/50 font-light max-w-2xl leading-relaxed">
-            By <span className="text-foreground font-medium">Shiju UK</span> • Senior Full Stack Developer & Architecture Consultant
+          <div className="text-xs text-foreground/50 font-light max-w-2xl leading-relaxed mt-6">
+            Written by <span className="text-foreground font-medium">Shiju UK</span> • Senior Full Stack Developer & Architecture Consultant
           </div>
         </header>
 
         {/* Post Content */}
-        <div className="prose prose-invert max-w-none">
+        <div className="max-w-3xl">
           {post.content.map((block, index) => renderContentBlock(block, index))}
         </div>
 
         {/* Keywords / Tags */}
-        <footer className="mt-16 pt-8 border-t border-border/20">
+        <footer className="mt-20 pt-10 border-t border-border/20 max-w-3xl">
           <div className="flex flex-wrap gap-2 items-center">
             <span className="text-[10px] font-bold tracking-widest text-foreground/40 uppercase mr-2 flex items-center gap-1">
               <Tag className="w-3.5 h-3.5" /> Tags:

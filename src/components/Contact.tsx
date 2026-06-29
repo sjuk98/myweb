@@ -6,8 +6,6 @@ import {
   CheckCircle, 
   Send, 
   Mail, 
-  Linkedin, 
-  Github, 
   MessageSquare 
 } from "lucide-react";
 

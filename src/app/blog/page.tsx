@@ -14,8 +14,8 @@ export default function BlogListPage() {
   return (
     <main className="flex min-h-screen flex-col overflow-x-hidden bg-background text-foreground font-sans relative">
       {/* Decorative Glows */}
-      <div className="absolute top-[10%] left-[-10%] w-[60vw] h-[60vw] bg-accent/5 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-[20%] right-[-10%] w-[50vw] h-[50vw] bg-accent-light/3 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-[10%] left-[-10%] w-[60vw] h-[60vw] bg-accent/5 rounded-full blur-[140px] pointer-events-none" style={{ transform: "translate3d(0,0,0)", willChange: "transform" }} />
+      <div className="absolute bottom-[20%] right-[-10%] w-[50vw] h-[50vw] bg-accent-light/3 rounded-full blur-[160px] pointer-events-none" style={{ transform: "translate3d(0,0,0)", willChange: "transform" }} />
 
       <Navbar />
 

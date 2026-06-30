@@ -176,7 +176,7 @@ export default function Projects() {
         {/* Project Card A */}
         <div className="border border-border/40 bg-muted/10 p-8 rounded-sm hover:border-accent-light/30 transition-all duration-300">
           <div className="text-[10px] font-bold tracking-[0.2em] text-accent-light uppercase mb-3">ENTERPRISE ERP</div>
-          <h3 className="text-2xl font-serif italic mb-4">Maxtron ERP</h3>
+          <h3 className="text-2xl font-serif italic mb-4">Enterprise ERP</h3>
           <p className="text-foreground/60 font-light text-sm mb-6 leading-relaxed">
             Architected secure inventory controllers, supplier validation systems, and custom dashboard components with robust permissions.
           </p>
@@ -188,7 +188,7 @@ export default function Projects() {
         {/* Project Card B */}
         <div className="border border-border/40 bg-muted/10 p-8 rounded-sm hover:border-accent-light/30 transition-all duration-300">
           <div className="text-[10px] font-bold tracking-[0.2em] text-accent-light uppercase mb-3">ED-TECH & LOGISTICS</div>
-          <h3 className="text-2xl font-serif italic mb-4">Inland Uniform</h3>
+          <h3 className="text-2xl font-serif italic mb-4">Uniform Portal</h3>
           <p className="text-foreground/60 font-light text-sm mb-6 leading-relaxed">
             Measurement records directory and school custom size registry. Structured with dynamic client grids and lightweight API calls.
           </p>
@@ -200,7 +200,7 @@ export default function Projects() {
         {/* Project Card C */}
         <div className="border border-border/40 bg-muted/10 p-8 rounded-sm hover:border-accent-light/30 transition-all duration-300">
           <div className="text-[10px] font-bold tracking-[0.2em] text-accent-light uppercase mb-3">MARKETPLACE & E-COMMERCE</div>
-          <h3 className="text-2xl font-serif italic mb-4">Tharacart</h3>
+          <h3 className="text-2xl font-serif italic mb-4">E-Commerce Marketplace</h3>
           <p className="text-foreground/60 font-light text-sm mb-6 leading-relaxed">
             Integrated seller registration components, custom tax validation hooks, and dynamic OTP authentication structures.
           </p>

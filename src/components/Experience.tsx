@@ -16,7 +16,6 @@ export default function Experience() {
             <h3 className="text-2xl font-serif mb-2 md:mb-0">Senior Full Stack Developer</h3>
             <div className="text-[10px] font-bold tracking-[0.2em] text-accent-light uppercase">JUL 2025 - Present</div>
           </div>
-          <div className="text-xs font-bold tracking-widest text-foreground/45 mb-4 uppercase">THINK FORGE GLOBAL</div>
           <p className="text-foreground/75 font-light leading-relaxed mb-4">
             Leading development teams, designing robust microservices architecture decisions, mentoring developers, and delivering highly scalable software solutions.
           </p>
@@ -34,7 +33,6 @@ export default function Experience() {
             <h3 className="text-2xl font-serif mb-2 md:mb-0 text-foreground/80">Full Stack Developer</h3>
             <div className="text-[10px] font-bold tracking-[0.2em] text-foreground/50 uppercase">JUN 2023 - APR 2025</div>
           </div>
-          <div className="text-xs font-bold tracking-widest text-foreground/45 mb-4 uppercase">FIRSTLOGIC META LAB</div>
           <p className="text-foreground/75 font-light leading-relaxed mb-4">
             Building enterprise applications, database schemas, dashboards, and cloud-based systems.
           </p>
@@ -52,7 +50,6 @@ export default function Experience() {
             <h3 className="text-2xl font-serif mb-2 md:mb-0 text-foreground/80">Junior Developer</h3>
             <div className="text-[10px] font-bold tracking-[0.2em] text-foreground/50 uppercase">OCT 2022 - MAY 2023</div>
           </div>
-          <div className="text-xs font-bold tracking-widest text-foreground/45 mb-4 uppercase">FIRSTLOGIC META LAB</div>
           <p className="text-foreground/75 font-light leading-relaxed mb-4">
             Developing application templates, custom dashboard routines, and handling responsive UI builds.
           </p>

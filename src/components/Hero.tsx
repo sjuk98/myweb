@@ -22,10 +22,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <Image 
-          src="/hero-bg.png" 
-          alt="Background Moss" 
-          fill 
+        <Image
+          src="/hero-bg.png"
+          alt="Background Moss"
+          fill
           sizes="100vw"
           className="object-cover opacity-30 mix-blend-overlay"
           priority
@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-background/40" />
       </div>
 
-      <motion.div 
+      <motion.div
         initial="hidden"
         animate="show"
         variants={STAGGER}
@@ -44,18 +44,18 @@ export default function Hero() {
           <span className="w-1.5 h-1.5 rounded-full bg-accent-light animate-pulse" />
           Senior Full Stack Developer
         </motion.div>
-        
+
         <motion.h1 variants={FADE_UP} className="text-5xl md:text-7xl lg:text-8xl font-serif italic font-medium text-foreground mb-8 tracking-tight leading-[1.15]">
-          Building Scalable <br/>
+          Building Scalable <br />
           <span className="text-accent-light not-italic font-sans font-extrabold bg-gradient-to-r from-accent-light via-accent-light to-foreground bg-clip-text text-transparent">
             Digital Products
           </span> & Enterprise Solutions
         </motion.h1>
-        
+
         <motion.p variants={FADE_UP} className="text-foreground/75 text-lg md:text-xl max-w-3xl font-light mb-12 leading-relaxed">
           I'm Shiju, a Senior Full Stack Developer specializing in Next.js, React, Node.js, Django, Firebase, Cloud Infrastructure, API Development, and Digital Transformation.
         </motion.p>
-        
+
         <motion.div variants={FADE_UP} className="flex flex-wrap justify-center items-center gap-6 mb-20">
           <Link href="#works" className="bg-accent hover:bg-accent/90 border border-accent hover:border-accent/90 text-foreground px-8 py-4 transition-all flex items-center gap-2 rounded-sm font-bold tracking-[0.15em] text-xs uppercase shadow-lg shadow-accent/20">
             View My Work <ArrowRight className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Trust Metrics Dashboard */}
-        <motion.div 
+        <motion.div
           variants={FADE_UP}
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl border border-border/30 bg-muted/40 backdrop-blur-md p-8 rounded-sm divide-y lg:divide-y-0 lg:divide-x divide-border/20 text-left"
         >
@@ -75,7 +75,7 @@ export default function Hero() {
             <div className="text-[10px] font-bold tracking-[0.15em] text-foreground/50 uppercase">Years Experience</div>
           </div>
           <div className="flex flex-col justify-center p-4 pt-6 lg:pt-4">
-            <div className="text-3xl md:text-4xl font-serif italic text-accent-light mb-1 font-semibold">50+</div>
+            <div className="text-3xl md:text-4xl font-serif italic text-accent-light mb-1 font-semibold">30+</div>
             <div className="text-[10px] font-bold tracking-[0.15em] text-foreground/50 uppercase">Projects Delivered</div>
           </div>
           <div className="flex flex-col justify-center p-4 pt-6 lg:pt-4">

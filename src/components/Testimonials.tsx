@@ -19,7 +19,7 @@ export default function Testimonials() {
           </p>
           <div>
             <div className="font-serif italic text-base text-accent-light">Siddharth N.</div>
-            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Founder & CEO</div>
+            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Founder & CEO, Firstlogic</div>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ export default function Testimonials() {
           </p>
           <div>
             <div className="font-serif italic text-base text-accent-light">Ramanan K.</div>
-            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Lead Solutions Architect</div>
+            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Lead Solutions Architect, Forge Global</div>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default function Testimonials() {
           </p>
           <div>
             <div className="font-serif italic text-base text-accent-light">Adarsh M.</div>
-            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Director of Engineering</div>
+            <div className="text-[10px] tracking-widest uppercase font-bold text-foreground/50 mt-1">Director of Engineering, TechForge</div>
           </div>
         </div>
       </div>

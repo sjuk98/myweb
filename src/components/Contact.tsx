@@ -12,8 +12,26 @@ import {
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    const formattedMessage = `Hello!
+
+*Name:* ${name}
+*Email:* ${email}
+
+*Message:*
+${message}`;
+
+    const encodedMessage = encodeURIComponent(formattedMessage);
+    const whatsappUrl = `https://wa.me/919074159289?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+
     setFormSubmitted(true);
     setTimeout(() => setFormSubmitted(false), 5000);
   };
@@ -42,17 +60,17 @@ export default function Contact() {
 
         <div className="flex flex-col gap-2">
           <label className="text-[10px] tracking-[0.2em] text-foreground/50 uppercase">Full Name</label>
-          <input required type="text" placeholder="John Doe" className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20" />
+          <input required name="name" type="text" placeholder="John Doe" className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20" />
         </div>
         
         <div className="flex flex-col gap-2">
           <label className="text-[10px] tracking-[0.2em] text-foreground/50 uppercase">Email Address</label>
-          <input required type="email" placeholder="john@example.com" className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20" />
+          <input required name="email" type="email" placeholder="john@example.com" className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20" />
         </div>
 
         <div className="flex flex-col gap-2">
           <label className="text-[10px] tracking-[0.2em] text-foreground/50 uppercase">Message</label>
-          <textarea required placeholder="Tell me about your project..." rows={3} className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20 resize-none"></textarea>
+          <textarea required name="message" placeholder="Tell me about your project..." rows={3} className="w-full bg-transparent border-b border-border/50 py-4 outline-none focus:border-accent-light transition-colors text-foreground font-serif text-xl placeholder:text-foreground/20 resize-none"></textarea>
         </div>
 
         <button type="submit" className="w-full bg-accent hover:bg-accent/90 text-foreground py-6 tracking-[0.2em] uppercase text-xs font-bold transition-colors mt-8 rounded-sm flex items-center justify-center gap-2">
